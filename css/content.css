@@ -1,0 +1,138 @@
+/*个人信息*/
+.personal{
+    background-color: #ced7df;
+    color: #23232b;
+}
+.personal .p-left{
+    width: 35%;
+    float: left;
+    height: 100%;
+}
+.personal .p-l-top{
+    padding: 0.6rem 0.3rem;
+    display: inline-block;
+}
+.personal .p-l-top h1{
+    font-size: 0.7rem;
+    line-height: 1rem;
+    height: 1rem;
+    font-weight: 700;
+    position: relative;
+}
+.personal .p-l-top h1:hover{
+    color: whitesmoke;
+}
+.personal .p-l-top h1::before{
+    content: "Mr.Yang";
+    font-size: 0.7rem;
+    line-height: 1rem;
+    height: 1rem;
+    width: 0%;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: width 0.5s;
+    color: #4eacff;
+    overflow: hidden;
+}
+.personal .p-l-top h1:hover::before{
+    width: 84%;
+}
+
+
+.personal .p-left .p-l-bottom ul{
+    padding: 0.2rem;
+}
+.personal .p-left .p-l-bottom li{
+    height: 0.4rem;
+    margin-top: 0.15rem;
+    text-align: center;
+    line-height: 0.4rem;
+    background-color: #fff;
+    font-weight: 500;
+}
+.personal .p-left .p-l-bottom li:nth-of-type(1){
+    width: 60%;
+}
+.personal .p-left .p-l-bottom li:nth-of-type(2){
+    width: 75%;
+}
+.personal .p-left .p-l-bottom li:nth-of-type(3){
+    width: 93%;
+}
+.personal .p-left .p-l-bottom li:nth-of-type(4){
+    width: 78%;
+}
+.personal .p-left .p-l-bottom li:nth-of-type(5){
+    width: 66%;
+}
+.personal .p-left .p-l-bottom li a:hover{
+    color: #23232b;
+    transition: all 1s;
+}
+.personal .p-left .p-l-bottom li:hover a::before{
+    display: inline-block;
+    transform: translate(-0.2rem,0);
+    transition: transform 0.4s;
+    opacity: 1;
+}
+.personal .p-left .p-l-bottom li:hover a::after{
+    display: inline-block;
+    transform: translate(0.2rem,0);
+    transition: transform 0.4s;
+    opacity: 1;
+}
+.personal .p-left .p-l-bottom li a::before{
+    content: "[";
+    transform: translate(5px,0);
+    transition: all 0.4s;
+    opacity: 0;
+    margin: 0;
+}
+.personal .p-left .p-l-bottom li a::after{
+    content: "]";
+    transform: translate(-5px,0);
+    transition: all 0.4s;
+    opacity: 0;
+    margin: 0;
+}
+
+.personal .p-right{
+    width: 65%;
+    height: 100%;
+    float: right;
+    text-align: center;
+    line-height: 6rem;
+}
+.personal .p-right>img{
+    height: 90%;
+    vertical-align: bottom;
+}
+
+
+/*项目展示*/
+.box .showreel{
+    background-color: palegreen;
+    height: 7rem;
+}
+.box .showreel h2{
+    text-align: center;
+    font-size: 0.3rem;
+    font-family: "Microsoft YaHei", sans-serif;
+    line-height: 0.5rem;
+    font-weight: 700;
+}
+.box .showreel ul{
+    height: 6.5rem;
+    text-align: center;
+}
+.box .showreel li{
+    display: inline-block;
+    overflow: hidden;
+    width: 30%;
+    height: 30%;
+    margin: 0.05rem;
+    border: 0.06rem solid white;
+    border-radius: 0.05rem;
+}
